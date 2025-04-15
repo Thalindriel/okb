@@ -1,0 +1,101 @@
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <title>Контакты</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const elements = document.querySelectorAll(".fade-in");
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, { threshold: 0.1 });
+  
+      elements.forEach(el => observer.observe(el));
+    });
+  </script>
+<body>
+  <header>
+    <div class="container header">
+      <img src="img/logo.svg" alt="Логотип больницы" class="logo">
+      <h1>Областная клиническая больница №2</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">Сведения</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="doctors.html">Врачи</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <a class="btn" href="appointment.html">Записаться на приём</a>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <h2>Контактная информация</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h4>Телефон</h4>
+          <p>+7 (351) 729-95-10</p>
+          <p>+7 (351) 256-95-04</p>
+        </div>
+        <div class="card">
+          <h4>Адрес</h4>
+          <p>г. Челябинск, ул. Гагарина, 18</p>
+        </div>
+        <div class="card">
+          <h4>Режим работы</h4>
+          <p>Пн-Пт: 08:00–20:00<br>Сб: 09:00–15:00<br>Вс: выходной</p>
+        </div>
+      </div>
+
+      <h3 style="text-align: center; margin-top: 40px;">Мы на карте</h3>
+      <div style="margin-top: 20px; display: flex; justify-content: center;">
+        <iframe src="https://yandex.ru/map-widget/v1/?ll=61.437702%2C55.137736&z=16&l=map"
+        width="100%" height="400" frameborder="0"
+        style="border:0; max-width: 800px; border-radius: 10px;" allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer">
+      <div>
+        <h4>Навигация</h4>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="doctors.html">Врачи</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <p>+7 (351) 729-95-10</p>
+        <p>г. Челябинск, ул. Гагарина, 18</p>
+      </div>
+      <div>
+        <h4>Социальные сети</h4>
+        <p>
+          <a href="#">ВКонтакте</a><br>
+          <a href="#">Telegram</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

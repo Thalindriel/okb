@@ -1,0 +1,115 @@
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <title>Вакцинация от COVID-19</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="main-header"></header>
+
+  <main class="container vaccination-page">
+    <h2>Вакцинация от COVID-19</h2>
+  
+    <section class="vaccination-intro">
+      <p><strong>Вакцинация</strong> — это самый эффективный способ защитить себя и окружающих от коронавирусной инфекции.</p>
+      <p>В нашей больнице вы можете пройти бесплатную вакцинацию отечественными препаратами, прошедшими государственную регистрацию и доказавшими свою эффективность и безопасность.</p>
+    </section>
+  
+    <div class="vaccine-block">
+        <section class="vaccination-steps">
+          <h3>Как проходит вакцинация</h3>
+          <ol>
+            <li>Медицинский осмотр врача перед вакцинацией</li>
+            <li>Введение первой дозы вакцины</li>
+            <li>Получение памятки и рекомендаций</li>
+            <li>Повторная доза через 21 день</li>
+            <li>Выдача QR-кода и сертификата</li>
+          </ol>
+        </section>
+      </div>
+  
+    <div class="vaccine-block">
+        <section class="vaccination-who">
+            <h3>Кому рекомендуется пройти вакцинацию</h3>
+            <ul>
+                <li>Людям старше 18 лет</li>
+                <li>Пациентам с хроническими заболеваниями (вне стадии обострения)</li>
+                <li>Медицинским и социальным работникам</li>
+                <li>Преподавателям и сотрудникам сферы образования</li>
+                <li>Людям, часто находящимся в общественных местах</li>
+            </ul>
+        </section>
+    </div>
+    
+  <div class="vaccine-block">
+        <section class="vaccination-contra">
+      <h3>Противопоказания</h3>
+      <ul>
+        <li>Индивидуальная непереносимость компонентов вакцины</li>
+        <li>Острые инфекционные заболевания</li>
+        <li>Хронические заболевания в стадии обострения</li>
+        <li>Беременность (для ряда вакцин)</li>
+      </ul>
+    </section>
+    </div>
+    
+    <div class="vaccine-block">
+        <section class="vaccination-where">
+            <h3>Где можно пройти вакцинацию</h3>
+            <p>Процедура проводится в поликлинике Областной клинической больницы №2 по адресу: <strong>г. Челябинск, ул. Гагарина, 18</strong>.</p>
+            <p><strong>Время работы прививочного кабинета:</strong> Пн–Сб с 9:00 до 17:00</p>
+            <p><strong>Телефон для записи:</strong> +7 (351) 256-95-10</p>
+        </section>
+    </div>
+    
+    <div class="vaccine-block">
+        <section class="vaccination-cta">
+            <p>Вы можете записаться через портал <a href="https://www.gosuslugi.ru" target="_blank">Госуслуги</a> или по телефону.</p>
+            <a class="btn primary" href="appointment.html">Записаться на приём</a>
+        </section>
+    </div> 
+  </main>
+
+  <footer>
+    <div class="container footer">
+      <div>
+        <h4>Навигация</h4>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="doctors.html">Врачи</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <p>+7 (351) 729-95-10</p>
+        <p>г. Челябинск, ул. Гагарина, 18</p>
+      </div>
+      <div>
+        <h4>Социальные сети</h4>
+        <p>
+          <a href="#">ВКонтакте</a><br>
+          <a href="#">Telegram</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      fetch("header.html")
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById("main-header").innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>

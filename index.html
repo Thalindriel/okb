@@ -1,0 +1,155 @@
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <title>Главная</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="main-header"></header>
+
+  <section class="banner">
+  <div class="banner-overlay"></div>
+  <div class="container banner-content">
+    <h2>Вакцинация от <strong>COVID-19</strong></h2>
+    <p>Современное оборудование, квалифицированные специалисты и индивидуальный подход</p>
+    <a class="btn" href="appointment.html">Записаться на приём</a>
+    <a class="btn secondary" href="vaccination.html">Узнать больше</a>
+  </div>
+</section>
+
+<section class="about-enhanced">
+    <div class="container about-block">
+      <div class="about-text">
+        <h2>О нашей больнице</h2>
+        <p>Областная клиническая больница №2 — современное многопрофильное учреждение с высокотехнологичным оборудованием и командой опытных специалистов.</p>
+        <p>Мы оказываем как амбулаторную, так и стационарную помощь, внедряя передовые методы диагностики и лечения.</p>
+      </div>
+      <div class="about-facts">
+        <div class="fact">
+          <h3>70+</h3>
+          <p>врачей высшей категории</p>
+        </div>
+        <div class="fact">
+          <h3>25 лет</h3>
+          <p>опыта в здравоохранении</p>
+        </div>
+        <div class="fact">
+          <h3>20 000+</h3>
+          <p>пациентов ежегодно</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-choose">
+    <div class="container">
+      <h2>Почему выбирают нас</h2>
+      <div class="reasons-grid">
+        <div class="reason-card">
+          <div class="reason-icon">👩‍⚕️</div>
+          <h4>Опытные врачи</h4>
+          <p>Специалисты с высокой квалификацией и медицинскими наградами.</p>
+        </div>
+        <div class="reason-card">
+          <div class="reason-icon">⚙️</div>
+          <h4>Новейшее оборудование</h4>
+          <p>Современные аппараты для точной диагностики и лечения.</p>
+        </div>
+        <div class="reason-card">
+          <div class="reason-icon">📅</div>
+          <h4>Онлайн-запись</h4>
+          <p>Быстрое и удобное бронирование приёмов и обследований.</p>
+        </div>
+        <div class="reason-card">
+          <div class="reason-icon">❤️</div>
+          <h4>Индивидуальный подход</h4>
+          <p>Лечение с заботой о вашем здоровье и комфорте.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="services">
+  <div class="container">
+    <h3>Онлайн-сервисы</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>Запись через Госуслуги</h4>
+        <p>Запишитесь на приём к врачу через портал госуслуг</p>
+        <a class="btn" href="#">Записаться</a>
+      </div>
+      <div class="card">
+        <h4>Электронный больничный</h4>
+        <p>Проверьте статус электронного больничного листа</p>
+        <a class="btn" href="#">Проверить</a>
+      </div>
+      <div class="card">
+        <h4>Документы онлайн</h4>
+        <p>Получите доступ к медицинским документам в электронном виде</p>
+        <a class="btn" href="#">Получить доступ</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="paid">
+  <div class="container">
+    <h3>Платные услуги</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>Прайс-лист услуг</h4>
+        <p>Ознакомьтесь с полным перечнем платных медицинских услуг</p>
+        <a class="btn" href="#">Скачать прайс-лист</a>
+      </div>
+      <div class="card">
+        <h4>Запись на платный приём</h4>
+        <p>Консультации специалистов и диагностика</p>
+        <a class="btn" href="#">Записаться</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <div class="container footer">
+      <div>
+        <h4>Навигация</h4>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="doctors.html">Врачи</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <p>+7 (351) 729-95-10</p>
+        <p>г. Челябинск, ул. Гагарина, 18</p>
+      </div>
+      <div>
+        <h4>Социальные сети</h4>
+        <p>
+          <a href="#">ВКонтакте</a><br>
+          <a href="#">Telegram</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("main-header").innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>

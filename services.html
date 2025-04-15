@@ -1,0 +1,134 @@
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <title>Услуги</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container header">
+      <img src="img/logo.svg" alt="Логотип больницы" class="logo">
+      <h1>Областная клиническая больница №2</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">Сведения</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="doctors.html">Врачи</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <a class="btn" href="appointment.html">Записаться на приём</a>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <h2>Наши услуги</h2>
+      <p>Мы предлагаем широкий спектр медицинских услуг, направленных на диагностику, лечение и профилактику заболеваний.</p>
+
+      <div class="services-grid">
+        <div class="paid-service-card">
+          <div class="service-icon">👩‍⚕️</div>
+          <h4>Приём терапевта</h4>
+          <p class="service-desc">Первичный осмотр, консультация и рекомендации</p>
+          <div class="service-footer">
+            <span class="service-price">от 1 200 ₽</span>
+            <a href="#" class="btn btn-small" data-service="therapist">Подробнее</a>
+          </div>
+        </div>
+      
+        <div class="paid-service-card">
+          <div class="service-icon">🫀</div>
+          <h4>Приём кардиолога</h4>
+          <p class="service-desc">Диагностика, ЭКГ, консультация по лечению сердца</p>
+          <div class="service-footer">
+            <span class="service-price">от 1 500 ₽</span>
+            <a href="#" class="btn btn-small" data-service="cardiologist">Подробнее</a>
+          </div>
+        </div>
+      
+        <div class="paid-service-card">
+          <div class="service-icon">🖥️</div>
+          <h4>УЗИ органов брюшной полости</h4>
+          <p class="service-desc">Обследование печени, желчного пузыря, поджелудочной железы</p>
+          <div class="service-footer">
+            <span class="service-price">от 900 ₽</span>
+            <a href="#" class="btn btn-small" data-service="ultrasound">Подробнее</a>
+          </div>
+        </div>
+      
+        <div class="paid-service-card">
+          <div class="service-icon">📷</div>
+          <h4>Флюорография</h4>
+          <p class="service-desc">Профилактическое обследование органов грудной клетки</p>
+          <div class="service-footer">
+            <span class="service-price">от 500 ₽</span>
+            <a href="#" class="btn btn-small" data-service="fluorography">Подробнее</a>
+          </div>
+        </div>
+      
+        <div class="paid-service-card">
+          <div class="service-icon">🧠</div>
+          <h4>Приём невролога</h4>
+          <p class="service-desc">Консультация по головным болям, спине и нервной системе</p>
+          <div class="service-footer">
+            <span class="service-price">от 1 400 ₽</span>
+            <a href="#" class="btn btn-small" data-service="neurologist">Подробнее</a>
+          </div>
+        </div>
+      
+        <div class="paid-service-card">
+          <div class="service-icon">💉</div>
+          <h4>Общий анализ крови</h4>
+          <p class="service-desc">Базовое лабораторное исследование общего состояния организма</p>
+          <div class="service-footer">
+            <span class="service-price">от 300 ₽</span>
+            <a href="#" class="btn btn-small" data-service="bloodtest">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer">
+      <div>
+        <h4>Навигация</h4>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="doctors.html">Врачи</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <p>+7 (351) 729-95-10</p>
+        <p>г. Челябинск, ул. Гагарина, 18</p>
+      </div>
+      <div>
+        <h4>Социальные сети</h4>
+        <p>
+          <a href="#">ВКонтакте</a><br>
+          <a href="#">Telegram</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <div class="modal-body" id="modal-body">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
